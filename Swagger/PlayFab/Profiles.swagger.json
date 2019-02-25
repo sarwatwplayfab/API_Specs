@@ -133,49 +133,6 @@
         ]
       }
     },
-    "/Profile/SetDisplayName": {
-      "post": {
-        "operationId": "SetDisplayName",
-        "tags": [
-          "Account Management"
-        ],
-        "description": "Update the display name of the entity",
-        "externalDocs": {
-          "url": "https://api.playfab.com/documentation/profiles/method/SetDisplayName"
-        },
-        "parameters": [
-          {
-            "$ref": "#/parameters/SetDisplayNameRequest"
-          }
-        ],
-        "security": [
-          {
-            "EntityToken": []
-          }
-        ],
-        "responses": {
-          "200": {
-            "$ref": "#/responses/SetDisplayNameResponse"
-          },
-          "400": {
-            "$ref": "#/responses/ApiErrorWrapper"
-          }
-        },
-        "x-requestDetails": "Given an entity profile, will update its display name to the one passed in if the profile's version is equal to or newer than the specified value",
-        "x-AnyInclusiveFlags": [
-          "Beta"
-        ],
-        "x-seeAlso": [
-          "Profile/GetProfile"
-        ],
-        "x-ms-docs-errors": [
-          "InvalidParams",
-          "NotAuthenticated",
-          "NotAuthorized",
-          "ProfileDoesNotExist"
-        ]
-      }
-    },
     "/Profile/SetGlobalPolicy": {
       "post": {
         "operationId": "SetGlobalPolicy",
@@ -359,16 +316,6 @@
         "Type": {
           "description": "Entity type. See https://api.playfab.com/docs/tutorials/entities/entitytypes",
           "type": "string"
-        },
-        "TypeString": {
-          "description": "Alternate name for Type.",
-          "type": "string",
-          "x-deprecation": {
-            "ProposedAfter": "6/1/2018",
-            "DeprecatedAfter": "7/1/2018",
-            "ObsoleteAfter": "8/1/2018",
-            "ReplacedBy": "Type"
-          }
         }
       },
       "required": [
@@ -679,62 +626,6 @@
         "None"
       ]
     },
-    "SetDisplayNameRequest": {
-      "description": "Given an entity profile, will update its display name to the one passed in if the profile's version is equal to or newer than the specified value",
-      "type": "object",
-      "properties": {
-        "DisplayName": {
-          "description": "The new value to be set on Entity Profile's display name",
-          "type": "string"
-        },
-        "Entity": {
-          "$ref": "#/definitions/EntityKey",
-          "description": "The entity to perform this action on.",
-          "type": "object",
-          "x-isclass": true
-        },
-        "ExpectedVersion": {
-          "description": "The expected version of a profile to perform this update on",
-          "type": "number",
-          "x-actualtype": "int32"
-        }
-      },
-      "example": {
-        "DisplayName": "My new display name",
-        "ExpectedVersion": 123,
-        "Entity": {
-          "Id": "90901000",
-          "Type": "title_player_account",
-          "TypeString": "title_player_account"
-        }
-      },
-      "x-AnyInclusiveFlags": [
-        "Beta"
-      ]
-    },
-    "SetDisplayNameResponse": {
-      "type": "object",
-      "properties": {
-        "OperationResult": {
-          "$ref": "#/definitions/OperationTypes",
-          "description": "The type of operation that occured on the profile's display name",
-          "type": "string",
-          "x-isenum": true
-        },
-        "VersionNumber": {
-          "description": "The updated version of the profile after the display name update",
-          "type": "number",
-          "x-actualtype": "int32"
-        }
-      },
-      "example": {
-        "VersionNumber": 42,
-        "OperationResult": "Updated"
-      },
-      "x-AnyInclusiveFlags": [
-        "Beta"
-      ]
-    },
     "SetEntityProfilePolicyRequest": {
       "description": "This will set the access policy statements on the given entity profile. This is not additive, any existing statements will be replaced with the statements in this request.",
       "type": "object",
@@ -914,14 +805,6 @@
         "$ref": "#/definitions/GetGlobalPolicyRequest"
       }
     },
-    "SetDisplayNameRequest": {
-      "name": "SetDisplayNameRequest",
-      "in": "body",
-      "description": "Given an entity profile, will update its display name to the one passed in if the profile's version is equal to or newer than the specified value",
-      "schema": {
-        "$ref": "#/definitions/SetDisplayNameRequest"
-      }
-    },
     "SetEntityProfilePolicyRequest": {
       "name": "SetEntityProfilePolicyRequest",
       "in": "body",
@@ -1055,33 +938,6 @@
                 "Comment": "An example policy"
               }
             ]
-          }
-        }
-      }
-    },
-    "SetDisplayNameResponse": {
-      "description": "",
-      "schema": {
-        "type": "object",
-        "properties": {
-          "code": {
-            "type": "integer",
-            "description": "The Http status code. If X-ReportErrorAsSuccess header is set to true, this will report the actual http error code."
-          },
-          "status": {
-            "type": "string",
-            "description": "The Http status code as a string."
-          },
-          "data": {
-            "$ref": "#/definitions/SetDisplayNameResponse"
-          }
-        },
-        "example": {
-          "code": 200,
-          "status": "OK",
-          "data": {
-            "VersionNumber": 42,
-            "OperationResult": "Updated"
           }
         }
       }

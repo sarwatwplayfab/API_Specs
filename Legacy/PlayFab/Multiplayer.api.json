@@ -329,7 +329,7 @@
       "AnyInclusiveFlags": [
         "Beta"
       ],
-      "description": "Cancels all tickets of which the player is a member in a given queue that are not\r\n                cancelled or matched. This API is useful if you lose track of what tickets\r\n                the player is a member of (if the title crashes for instance) and want to\r\n                \"reset\".\r\n\r\n                The Entity field is optional if the caller is a player and defaults to that\r\n                player. Players may not cancel tickets for other people.\r\n\r\n                The Entity field is required if the caller is a server (authenticated as\r\n                the title).",
+      "description": "Cancels all tickets of which the player is a member in a given queue that are not\n                cancelled or matched. This API is useful if you lose track of what tickets\n                the player is a member of (if the title crashes for instance) and want to\n                \"reset\".\n\n                The Entity field is optional if the caller is a player and defaults to that\n                player. Players may not cancel tickets for other people.\n\n                The Entity field is required if the caller is a server (authenticated as\n                the title).",
       "isRequest": true,
       "properties": [
         {
@@ -389,7 +389,7 @@
       "AnyInclusiveFlags": [
         "Beta"
       ],
-      "description": "Only servers and ticket members can cancel a ticket.\r\n\r\n                The ticket can be in four different states when it is cancelled.\r\n                1: the ticket is waiting for members to join it, and it has not started matching.\r\n                    If the ticket is cancelled at this stage, it will never match.\r\n                2: the ticket is matching. If the ticket is cancelled, it will stop matching.\r\n                3: the ticket is matched. A matched ticket cannot be cancelled.\r\n                4: the ticket is already cancelled and nothing happens.\r\n\r\n                There may be race conditions between the ticket getting matched and\r\n                the client making a cancellation request. The client must handle the possibility\r\n                that the cancel request fails if a match is found before the cancellation request is processed.\r\n                We do not allow resubmitting a cancelled ticket because players\r\n                must consent to enter matchmaking again. Create a new ticket instead.",
+      "description": "Only servers and ticket members can cancel a ticket.\n\n                The ticket can be in four different states when it is cancelled.\n                1: the ticket is waiting for members to join it, and it has not started matching.\n                    If the ticket is cancelled at this stage, it will never match.\n                2: the ticket is matching. If the ticket is cancelled, it will stop matching.\n                3: the ticket is matched. A matched ticket cannot be cancelled.\n                4: the ticket is already cancelled and nothing happens.\n\n                There may be race conditions between the ticket getting matched and\n                the client making a cancellation request. The client must handle the possibility\n                that the cancel request fails if a match is found before the cancellation request is processed.\n                We do not allow resubmitting a cancelled ticket because players\n                must consent to enter matchmaking again. Create a new ticket instead.",
       "isRequest": true,
       "properties": [
         {
@@ -1710,7 +1710,7 @@
       "AnyInclusiveFlags": [
         "Beta"
       ],
-      "description": "The ticket includes the invited players, their attributes if they have joined,\r\n                the ticket status, the match Id when applicable, etc.\r\n                Only servers, the ticket creator and the invited players can get the ticket.",
+      "description": "The ticket includes the invited players, their attributes if they have joined,\n                the ticket status, the match Id when applicable, etc.\n                Only servers, the ticket creator and the invited players can get the ticket.",
       "isRequest": true,
       "properties": [
         {
@@ -1832,7 +1832,7 @@
       "AnyInclusiveFlags": [
         "Beta"
       ],
-      "description": "When matchmaking has successfully matched together a collection of\r\n                tickets, it produces a 'match' with an Id. The match contains all of\r\n                the players that were matched together, and their team assigments.\r\n\r\n                Only servers and ticket members can get the match.",
+      "description": "When matchmaking has successfully matched together a collection of\n                tickets, it produces a 'match' with an Id. The match contains all of\n                the players that were matched together, and their team assigments.\n\n                Only servers and ticket members can get the match.",
       "isRequest": true,
       "properties": [
         {
@@ -2079,7 +2079,7 @@
       "AnyInclusiveFlags": [
         "Beta"
       ],
-      "description": "Returns the matchmaking statistics for a queue. These include the number of players matching\r\n                and the statistics related to the time to match statistics in seconds (average and percentiles).\r\n                Statistics are refreshed once every 5 minutes.\r\n\r\n                Servers can access all statistics no matter what the ClientStatisticsVisibility is configured to.\r\n                Clients can access statistics according to the ClientStatisticsVisibility.\r\n                Client requests are forbidden if all visibility fields are false.",
+      "description": "Returns the matchmaking statistics for a queue. These include the number of players matching\n                and the statistics related to the time to match statistics in seconds (average and percentiles).\n                Statistics are refreshed once every 5 minutes.\n\n                Servers can access all statistics no matter what the ClientStatisticsVisibility is configured to.\n                Clients can access statistics according to the ClientStatisticsVisibility.\n                Client requests are forbidden if all visibility fields are false.",
       "isRequest": true,
       "properties": [
         {
@@ -2207,7 +2207,7 @@
       "AnyInclusiveFlags": [
         "Beta"
       ],
-      "description": "Add the player to a matchmaking ticket and specify all of its matchmaking\r\n                attributes. Players can join a ticket if and only if their EntityKeys are\r\n                already listed in the ticket's Members list.\r\n\r\n                The matchmaking service automatically starts matching the ticket against\r\n                other matchmaking tickets once all players have joined the ticket.\r\n                It is not possible to join a ticket once it has started matching.",
+      "description": "Add the player to a matchmaking ticket and specify all of its matchmaking\n                attributes. Players can join a ticket if and only if their EntityKeys are\n                already listed in the ticket's Members list.\n\n                The matchmaking service automatically starts matching the ticket against\n                other matchmaking tickets once all players have joined the ticket.\n                It is not possible to join a ticket once it has started matching.",
       "isRequest": true,
       "properties": [
         {
@@ -2543,7 +2543,7 @@
       "AnyInclusiveFlags": [
         "Beta"
       ],
-      "description": "If the caller is a title, the EntityKey in the request is required.\r\n            If the caller is a player, then it is optional. If it is provided it must match the caller's entity.",
+      "description": "If the caller is a title, the EntityKey in the request is required.\n            If the caller is a player, then it is optional. If it is provided it must match the caller's entity.",
       "isRequest": true,
       "properties": [
         {
@@ -3128,7 +3128,7 @@
       "AnyInclusiveFlags": [
         "Beta"
       ],
-      "description": "Deletes the configuration for a queue. This will permanently delete the \r\n                configuration and players will no longer be able to match in the queue.\r\n                All outstanding matchmaking tickets will be cancelled.",
+      "description": "Deletes the configuration for a queue. This will permanently delete the \n                configuration and players will no longer be able to match in the queue.\n                All outstanding matchmaking tickets will be cancelled.",
       "isRequest": true,
       "properties": [
         {
@@ -3526,7 +3526,7 @@
       "AnyInclusiveFlags": [
         "Beta"
       ],
-      "description": "Use this API to create or update matchmaking queue configurations. The queue\r\n                configuration defines the matchmaking rules. The matchmaking service will match\r\n                tickets together according to the configured rules. Queue resources are not\r\n                spun up by calling this API. Queues are created when the first ticket is submitted.",
+      "description": "Use this API to create or update matchmaking queue configurations. The queue\n                configuration defines the matchmaking rules. The matchmaking service will match\n                tickets together according to the configured rules. Queue resources are not\n                spun up by calling this API. Queues are created when the first ticket is submitted.",
       "isRequest": true,
       "properties": [
         {

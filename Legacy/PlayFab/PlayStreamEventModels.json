@@ -4,6 +4,194 @@
       "Group": "none",
       "Classes": [
         {
+          "name": "entity_catalog_item_created",
+          "className": "EntityCatalogDraftItemCreatedEventDataDoc",
+          "classNameSpace": "PlayFab.PlayStreamEvent.Models",
+          "assembly": "PlayFab.PlayStreamEvent.Models",
+          "description": "This event is triggered when a catalog item is created.",
+          "properties": [
+            {
+              "name": "EntityLineage",
+              "description": "Entities that this entity is a child of.",
+              "jsontype": "Object",
+              "actualtype": "EntityLineage",
+              "isclass": true,
+              "optional": true
+            },
+            {
+              "name": "OriginalEventId",
+              "description": "The original unique identifier associated with this event before it was posted to PlayFab. The value might differ from the EventId value, which is assigned when the event is received by the server.",
+              "jsontype": "String",
+              "actualtype": "String",
+              "optional": true
+            },
+            {
+              "name": "OriginalTimestamp",
+              "description": "The original time (in UTC) associated with this event before it was posted to PlayFab. The value might differ from the Timestamp value, which is set at the time the event is received by the server.",
+              "jsontype": "String",
+              "actualtype": "DateTime",
+              "optional": true
+            },
+            {
+              "name": "Payload",
+              "description": "The catalog requested event payload.",
+              "jsontype": "Object",
+              "actualtype": "EntityCatalogDraftItemCreatedEventPayload",
+              "isclass": true,
+              "optional": true
+            },
+            {
+              "name": "WriterEntity",
+              "description": "Entity that wrote this event, included only if different than the event's entity.",
+              "jsontype": "Object",
+              "actualtype": "EntityKey",
+              "isclass": true,
+              "optional": true
+            }
+          ]
+        },
+        {
+          "name": "entity_catalog_item_deleted",
+          "className": "EntityCatalogDraftItemDeletedEventDataDoc",
+          "classNameSpace": "PlayFab.PlayStreamEvent.Models",
+          "assembly": "PlayFab.PlayStreamEvent.Models",
+          "description": "This event is triggered when a catalog item is deleted.",
+          "properties": [
+            {
+              "name": "EntityLineage",
+              "description": "Entities that this entity is a child of.",
+              "jsontype": "Object",
+              "actualtype": "EntityLineage",
+              "isclass": true,
+              "optional": true
+            },
+            {
+              "name": "OriginalEventId",
+              "description": "The original unique identifier associated with this event before it was posted to PlayFab. The value might differ from the EventId value, which is assigned when the event is received by the server.",
+              "jsontype": "String",
+              "actualtype": "String",
+              "optional": true
+            },
+            {
+              "name": "OriginalTimestamp",
+              "description": "The original time (in UTC) associated with this event before it was posted to PlayFab. The value might differ from the Timestamp value, which is set at the time the event is received by the server.",
+              "jsontype": "String",
+              "actualtype": "DateTime",
+              "optional": true
+            },
+            {
+              "name": "Payload",
+              "description": "The catalog requested event payload.",
+              "jsontype": "Object",
+              "actualtype": "EntityCatalogDraftItemDeletedEventPayload",
+              "isclass": true,
+              "optional": true
+            },
+            {
+              "name": "WriterEntity",
+              "description": "Entity that wrote this event, included only if different than the event's entity.",
+              "jsontype": "Object",
+              "actualtype": "EntityKey",
+              "isclass": true,
+              "optional": true
+            }
+          ]
+        },
+        {
+          "name": "entity_catalog_item_publish_requested",
+          "className": "EntityCatalogDraftItemPublishRequestedEventDataDoc",
+          "classNameSpace": "PlayFab.PlayStreamEvent.Models",
+          "assembly": "PlayFab.PlayStreamEvent.Models",
+          "description": "This event is triggered when a catalog draft item is requested to be published.",
+          "properties": [
+            {
+              "name": "EntityLineage",
+              "description": "Entities that this entity is a child of.",
+              "jsontype": "Object",
+              "actualtype": "EntityLineage",
+              "isclass": true,
+              "optional": true
+            },
+            {
+              "name": "OriginalEventId",
+              "description": "The original unique identifier associated with this event before it was posted to PlayFab. The value might differ from the EventId value, which is assigned when the event is received by the server.",
+              "jsontype": "String",
+              "actualtype": "String",
+              "optional": true
+            },
+            {
+              "name": "OriginalTimestamp",
+              "description": "The original time (in UTC) associated with this event before it was posted to PlayFab. The value might differ from the Timestamp value, which is set at the time the event is received by the server.",
+              "jsontype": "String",
+              "actualtype": "DateTime",
+              "optional": true
+            },
+            {
+              "name": "Payload",
+              "description": "The catalog requested event payload.",
+              "jsontype": "Object",
+              "actualtype": "EntityCatalogDraftItemPublishRequestedEventPayload",
+              "isclass": true,
+              "optional": true
+            },
+            {
+              "name": "WriterEntity",
+              "description": "Entity that wrote this event, included only if different than the event's entity.",
+              "jsontype": "Object",
+              "actualtype": "EntityKey",
+              "isclass": true,
+              "optional": true
+            }
+          ]
+        },
+        {
+          "name": "entity_catalog_item_updated",
+          "className": "EntityCatalogDraftItemUpdatedEventDataDoc",
+          "classNameSpace": "PlayFab.PlayStreamEvent.Models",
+          "assembly": "PlayFab.PlayStreamEvent.Models",
+          "description": "This event is triggered when a catalog item is updated.",
+          "properties": [
+            {
+              "name": "EntityLineage",
+              "description": "Entities that this entity is a child of.",
+              "jsontype": "Object",
+              "actualtype": "EntityLineage",
+              "isclass": true,
+              "optional": true
+            },
+            {
+              "name": "OriginalEventId",
+              "description": "The original unique identifier associated with this event before it was posted to PlayFab. The value might differ from the EventId value, which is assigned when the event is received by the server.",
+              "jsontype": "String",
+              "actualtype": "String",
+              "optional": true
+            },
+            {
+              "name": "OriginalTimestamp",
+              "description": "The original time (in UTC) associated with this event before it was posted to PlayFab. The value might differ from the Timestamp value, which is set at the time the event is received by the server.",
+              "jsontype": "String",
+              "actualtype": "DateTime",
+              "optional": true
+            },
+            {
+              "name": "Payload",
+              "description": "The catalog requested event payload.",
+              "jsontype": "Object",
+              "actualtype": "EntityCatalogDraftItemUpdatedEventPayload",
+              "isclass": true,
+              "optional": true
+            },
+            {
+              "name": "WriterEntity",
+              "description": "Entity that wrote this event, included only if different than the event's entity.",
+              "jsontype": "Object",
+              "actualtype": "EntityKey",
+              "isclass": true,
+              "optional": true
+            }
+          ]
+        },
+        {
           "name": "entity_created",
           "className": "EntityCreatedEventData",
           "classNameSpace": "PlayFab.PlayStreamEvent.Models",
@@ -177,6 +365,241 @@
               "collection": "array",
               "jsontype": "Object",
               "actualtype": "ObjectSet",
+              "isclass": true,
+              "optional": true
+            }
+          ]
+        },
+        {
+          "name": "entity_user_generated_content_item_created",
+          "className": "EntityUserGeneratedContentDraftItemCreatedEventDataDoc",
+          "classNameSpace": "PlayFab.PlayStreamEvent.Models",
+          "assembly": "PlayFab.PlayStreamEvent.Models",
+          "description": "This event is triggered when a User Generated Content item is created.",
+          "properties": [
+            {
+              "name": "EntityLineage",
+              "description": "Entities that this entity is a child of.",
+              "jsontype": "Object",
+              "actualtype": "EntityLineage",
+              "isclass": true,
+              "optional": true
+            },
+            {
+              "name": "OriginalEventId",
+              "description": "The original unique identifier associated with this event before it was posted to PlayFab. The value might differ from the EventId value, which is assigned when the event is received by the server.",
+              "jsontype": "String",
+              "actualtype": "String",
+              "optional": true
+            },
+            {
+              "name": "OriginalTimestamp",
+              "description": "The original time (in UTC) associated with this event before it was posted to PlayFab. The value might differ from the Timestamp value, which is set at the time the event is received by the server.",
+              "jsontype": "String",
+              "actualtype": "DateTime",
+              "optional": true
+            },
+            {
+              "name": "Payload",
+              "description": "The User Generated Content requested event payload.",
+              "jsontype": "Object",
+              "actualtype": "EntityUserGeneratedContentDraftItemCreatedEventPayload",
+              "isclass": true,
+              "optional": true
+            },
+            {
+              "name": "WriterEntity",
+              "description": "Entity that wrote this event, included only if different than the event's entity.",
+              "jsontype": "Object",
+              "actualtype": "EntityKey",
+              "isclass": true,
+              "optional": true
+            }
+          ]
+        },
+        {
+          "name": "entity_user_generated_content_item_deleted",
+          "className": "EntityUserGeneratedContentDraftItemDeletedEventDataDoc",
+          "classNameSpace": "PlayFab.PlayStreamEvent.Models",
+          "assembly": "PlayFab.PlayStreamEvent.Models",
+          "description": "This event is triggered when a User Generated Content item is deleted.",
+          "properties": [
+            {
+              "name": "EntityLineage",
+              "description": "Entities that this entity is a child of.",
+              "jsontype": "Object",
+              "actualtype": "EntityLineage",
+              "isclass": true,
+              "optional": true
+            },
+            {
+              "name": "OriginalEventId",
+              "description": "The original unique identifier associated with this event before it was posted to PlayFab. The value might differ from the EventId value, which is assigned when the event is received by the server.",
+              "jsontype": "String",
+              "actualtype": "String",
+              "optional": true
+            },
+            {
+              "name": "OriginalTimestamp",
+              "description": "The original time (in UTC) associated with this event before it was posted to PlayFab. The value might differ from the Timestamp value, which is set at the time the event is received by the server.",
+              "jsontype": "String",
+              "actualtype": "DateTime",
+              "optional": true
+            },
+            {
+              "name": "Payload",
+              "description": "The User Generated Content requested event payload.",
+              "jsontype": "Object",
+              "actualtype": "EntityUserGeneratedContentDraftItemDeletedEventPayload",
+              "isclass": true,
+              "optional": true
+            },
+            {
+              "name": "WriterEntity",
+              "description": "Entity that wrote this event, included only if different than the event's entity.",
+              "jsontype": "Object",
+              "actualtype": "EntityKey",
+              "isclass": true,
+              "optional": true
+            }
+          ]
+        },
+        {
+          "name": "entity_user_generated_content_item_publish_requested",
+          "className": "EntityUserGeneratedContentDraftItemPublishRequestedEventDataDoc",
+          "classNameSpace": "PlayFab.PlayStreamEvent.Models",
+          "assembly": "PlayFab.PlayStreamEvent.Models",
+          "description": "This event is triggered when a User Generated Content draft item is requested to be published.",
+          "properties": [
+            {
+              "name": "EntityLineage",
+              "description": "Entities that this entity is a child of.",
+              "jsontype": "Object",
+              "actualtype": "EntityLineage",
+              "isclass": true,
+              "optional": true
+            },
+            {
+              "name": "OriginalEventId",
+              "description": "The original unique identifier associated with this event before it was posted to PlayFab. The value might differ from the EventId value, which is assigned when the event is received by the server.",
+              "jsontype": "String",
+              "actualtype": "String",
+              "optional": true
+            },
+            {
+              "name": "OriginalTimestamp",
+              "description": "The original time (in UTC) associated with this event before it was posted to PlayFab. The value might differ from the Timestamp value, which is set at the time the event is received by the server.",
+              "jsontype": "String",
+              "actualtype": "DateTime",
+              "optional": true
+            },
+            {
+              "name": "Payload",
+              "description": "The User Generated Content requested event payload.",
+              "jsontype": "Object",
+              "actualtype": "EntityUserGeneratedContentDraftItemPublishRequestedEventPayload",
+              "isclass": true,
+              "optional": true
+            },
+            {
+              "name": "WriterEntity",
+              "description": "Entity that wrote this event, included only if different than the event's entity.",
+              "jsontype": "Object",
+              "actualtype": "EntityKey",
+              "isclass": true,
+              "optional": true
+            }
+          ]
+        },
+        {
+          "name": "entity_user_generated_content_item_updated",
+          "className": "EntityUserGeneratedContentDraftItemUpdatedEventDataDoc",
+          "classNameSpace": "PlayFab.PlayStreamEvent.Models",
+          "assembly": "PlayFab.PlayStreamEvent.Models",
+          "description": "This event is triggered when a User Generated Content item is updated.",
+          "properties": [
+            {
+              "name": "EntityLineage",
+              "description": "Entities that this entity is a child of.",
+              "jsontype": "Object",
+              "actualtype": "EntityLineage",
+              "isclass": true,
+              "optional": true
+            },
+            {
+              "name": "OriginalEventId",
+              "description": "The original unique identifier associated with this event before it was posted to PlayFab. The value might differ from the EventId value, which is assigned when the event is received by the server.",
+              "jsontype": "String",
+              "actualtype": "String",
+              "optional": true
+            },
+            {
+              "name": "OriginalTimestamp",
+              "description": "The original time (in UTC) associated with this event before it was posted to PlayFab. The value might differ from the Timestamp value, which is set at the time the event is received by the server.",
+              "jsontype": "String",
+              "actualtype": "DateTime",
+              "optional": true
+            },
+            {
+              "name": "Payload",
+              "description": "The User Generated Content requested event payload.",
+              "jsontype": "Object",
+              "actualtype": "EntityUserGeneratedContentDraftItemUpdatedEventPayload",
+              "isclass": true,
+              "optional": true
+            },
+            {
+              "name": "WriterEntity",
+              "description": "Entity that wrote this event, included only if different than the event's entity.",
+              "jsontype": "Object",
+              "actualtype": "EntityKey",
+              "isclass": true,
+              "optional": true
+            }
+          ]
+        },
+        {
+          "name": "entity_user_generated_content_item_reported",
+          "className": "EntityUserGeneratedContentItemReportedEventDataDoc",
+          "classNameSpace": "PlayFab.PlayStreamEvent.Models",
+          "assembly": "PlayFab.PlayStreamEvent.Models",
+          "description": "This event is triggered when a User Generated Content item is reported.",
+          "properties": [
+            {
+              "name": "EntityLineage",
+              "description": "Entities that this entity is a child of.",
+              "jsontype": "Object",
+              "actualtype": "EntityLineage",
+              "isclass": true,
+              "optional": true
+            },
+            {
+              "name": "OriginalEventId",
+              "description": "The original unique identifier associated with this event before it was posted to PlayFab. The value might differ from the EventId value, which is assigned when the event is received by the server.",
+              "jsontype": "String",
+              "actualtype": "String",
+              "optional": true
+            },
+            {
+              "name": "OriginalTimestamp",
+              "description": "The original time (in UTC) associated with this event before it was posted to PlayFab. The value might differ from the Timestamp value, which is set at the time the event is received by the server.",
+              "jsontype": "String",
+              "actualtype": "DateTime",
+              "optional": true
+            },
+            {
+              "name": "Payload",
+              "description": "The User Generated Content reported event payload.",
+              "jsontype": "Object",
+              "actualtype": "EntityUserGeneratedContentItemReportedEventPayload",
+              "isclass": true,
+              "optional": true
+            },
+            {
+              "name": "WriterEntity",
+              "description": "Entity that wrote this event, included only if different than the event's entity.",
+              "jsontype": "Object",
+              "actualtype": "EntityKey",
               "isclass": true,
               "optional": true
             }
@@ -6549,675 +6972,6 @@
   ],
   "ChildTypes": [
     {
-      "name": "EntityLineage",
-      "className": "EntityLineage",
-      "classNameSpace": "PlayFab.PlayStreamEvent.Models",
-      "assembly": "PlayFab.PlayStreamEvent.Models",
-      "properties": [
-        {
-          "name": "CharacterId",
-          "description": "The Character Id of the associated entity.",
-          "jsontype": "String",
-          "actualtype": "String",
-          "optional": true
-        },
-        {
-          "name": "GroupId",
-          "description": "The Group Id of the associated entity.",
-          "jsontype": "String",
-          "actualtype": "String",
-          "optional": true
-        },
-        {
-          "name": "MasterPlayerAccountId",
-          "description": "The Master Player Account Id of the associated entity.",
-          "jsontype": "String",
-          "actualtype": "String",
-          "optional": true
-        },
-        {
-          "name": "NamespaceId",
-          "description": "The Namespace Id of the associated entity.",
-          "jsontype": "String",
-          "actualtype": "String",
-          "optional": true
-        },
-        {
-          "name": "TitleId",
-          "description": "The Title Id of the associated entity.",
-          "jsontype": "String",
-          "actualtype": "String",
-          "optional": true
-        },
-        {
-          "name": "TitlePlayerAccountId",
-          "description": "The Title Player Account Id of the associated entity.",
-          "jsontype": "String",
-          "actualtype": "String",
-          "optional": true
-        }
-      ]
-    },
-    {
-      "name": "LogStatement",
-      "className": "LogStatement",
-      "classNameSpace": "PlayFab.PlayStreamEvent.Models",
-      "assembly": "PlayFab.PlayStreamEvent.Models",
-      "properties": [
-        {
-          "name": "Data",
-          "description": "Optional object accompanying the message as contextual information",
-          "jsontype": "Object",
-          "actualtype": "object",
-          "optional": true
-        },
-        {
-          "name": "Level",
-          "description": "'Debug', 'Info', or 'Error'",
-          "jsontype": "String",
-          "actualtype": "String",
-          "optional": true
-        },
-        {
-          "name": "Message",
-          "jsontype": "String",
-          "actualtype": "String",
-          "optional": true
-        }
-      ]
-    },
-    {
-      "name": "ScriptExecutionError",
-      "className": "ScriptExecutionError",
-      "classNameSpace": "PlayFab.PlayStreamEvent.Models",
-      "assembly": "PlayFab.PlayStreamEvent.Models",
-      "properties": [
-        {
-          "name": "Error",
-          "description": "Error code, such as CloudScriptNotFound, JavascriptException, CloudScriptFunctionArgumentSizeExceeded, CloudScriptAPIRequestCountExceeded, CloudScriptAPIRequestError, or CloudScriptHTTPRequestError",
-          "jsontype": "String",
-          "actualtype": "String",
-          "optional": true
-        },
-        {
-          "name": "Message",
-          "description": "Details about the error",
-          "jsontype": "String",
-          "actualtype": "String",
-          "optional": true
-        },
-        {
-          "name": "StackTrace",
-          "description": "Point during the execution of the script at which the error occurred, if any",
-          "jsontype": "String",
-          "actualtype": "String",
-          "optional": true
-        }
-      ]
-    },
-    {
-      "name": "ExecuteCloudScriptResult",
-      "className": "ExecuteCloudScriptResult",
-      "classNameSpace": "PlayFab.PlayStreamEvent.Models",
-      "assembly": "PlayFab.PlayStreamEvent.Models",
-      "properties": [
-        {
-          "name": "APIRequestsIssued",
-          "description": "Number of PlayFab API requests issued by the CloudScript function",
-          "jsontype": "Number",
-          "actualtype": "int32",
-          "optional": false
-        },
-        {
-          "name": "Error",
-          "description": "Information about the error, if any, that occurred during execution",
-          "jsontype": "Object",
-          "actualtype": "ScriptExecutionError",
-          "isclass": true,
-          "optional": true
-        },
-        {
-          "name": "ExecutionTimeSeconds",
-          "jsontype": "Number",
-          "actualtype": "double",
-          "optional": false
-        },
-        {
-          "name": "FunctionName",
-          "description": "The name of the function that executed",
-          "jsontype": "String",
-          "actualtype": "String",
-          "optional": true
-        },
-        {
-          "name": "FunctionResult",
-          "description": "The object returned from the CloudScript function, if any",
-          "jsontype": "Object",
-          "actualtype": "object",
-          "optional": true
-        },
-        {
-          "name": "FunctionResultTooLarge",
-          "description": "Flag indicating if the FunctionResult was too large and was subsequently dropped from this event. This only occurs if the total event size is larger than 350KB.",
-          "jsontype": "Boolean",
-          "actualtype": "Boolean",
-          "optional": true
-        },
-        {
-          "name": "HttpRequestsIssued",
-          "description": "Number of external HTTP requests issued by the CloudScript function",
-          "jsontype": "Number",
-          "actualtype": "int32",
-          "optional": false
-        },
-        {
-          "name": "Logs",
-          "description": "Entries logged during the function execution. These include both entries logged in the function code using log.info() and log.error() and error entries for API and HTTP request failures.",
-          "collection": "array",
-          "jsontype": "Object",
-          "actualtype": "LogStatement",
-          "isclass": true,
-          "optional": true
-        },
-        {
-          "name": "LogsTooLarge",
-          "description": "Flag indicating if the logs were too large and were subsequently dropped from this event. This only occurs if the total event size is larger than 350KB after the FunctionResult was removed.",
-          "jsontype": "Boolean",
-          "actualtype": "Boolean",
-          "optional": true
-        },
-        {
-          "name": "MemoryConsumedBytes",
-          "jsontype": "Number",
-          "actualtype": "uint32",
-          "optional": false
-        },
-        {
-          "name": "ProcessorTimeSeconds",
-          "description": "Processor time consumed while executing the function. This does not include time spent waiting on API calls or HTTP requests.",
-          "jsontype": "Number",
-          "actualtype": "double",
-          "optional": false
-        },
-        {
-          "name": "Revision",
-          "description": "The revision of the CloudScript that executed",
-          "jsontype": "Number",
-          "actualtype": "int32",
-          "optional": false
-        }
-      ]
-    },
-    {
-      "name": "OperationTypes",
-      "className": "OperationTypes",
-      "classNameSpace": "PlayFab.PlayStreamEvent.Models",
-      "assembly": "PlayFab.PlayStreamEvent.Models",
-      "isenum": true,
-      "enumvalues": [
-        {
-          "name": "Created"
-        },
-        {
-          "name": "Updated"
-        },
-        {
-          "name": "Deleted"
-        },
-        {
-          "name": "None"
-        }
-      ]
-    },
-    {
-      "name": "FileSet",
-      "className": "FileSet",
-      "classNameSpace": "PlayFab.PlayStreamEvent.Models",
-      "assembly": "PlayFab.PlayStreamEvent.Models",
-      "properties": [
-        {
-          "name": "ByteCount",
-          "description": "The storage size according to the underlying provider.",
-          "jsontype": "Number",
-          "actualtype": "int32",
-          "optional": false
-        },
-        {
-          "name": "Checksum",
-          "description": "The checksum according to the underlying provider.",
-          "jsontype": "String",
-          "actualtype": "String",
-          "optional": true
-        },
-        {
-          "name": "FileName",
-          "description": "File that was updated.",
-          "jsontype": "String",
-          "actualtype": "String",
-          "optional": true
-        },
-        {
-          "name": "Operation",
-          "description": "The operation that was performed.",
-          "jsontype": "String",
-          "actualtype": "OperationTypes",
-          "isenum": true,
-          "optional": true
-        },
-        {
-          "name": "PreviousByteCount",
-          "description": "The storage size of the old file, if there was one.",
-          "jsontype": "Number",
-          "actualtype": "int32",
-          "optional": true
-        },
-        {
-          "name": "PreviousChecksum",
-          "description": "The storage size of the old file, if there was one.",
-          "jsontype": "String",
-          "actualtype": "String",
-          "optional": true
-        },
-        {
-          "name": "PreviousStoragePath",
-          "description": "The old file's unique storage path that was deleted by this operation, if there was one.",
-          "jsontype": "String",
-          "actualtype": "String",
-          "optional": true
-        },
-        {
-          "name": "StoragePath",
-          "description": "The unique storage path for this set operation.",
-          "jsontype": "String",
-          "actualtype": "String",
-          "optional": true
-        }
-      ]
-    },
-    {
-      "name": "ObjectSet",
-      "className": "ObjectSet",
-      "classNameSpace": "PlayFab.PlayStreamEvent.Models",
-      "assembly": "PlayFab.PlayStreamEvent.Models",
-      "properties": [
-        {
-          "name": "DataObject",
-          "description": "The JSON Object that was last set on the profile.",
-          "jsontype": "Object",
-          "actualtype": "object",
-          "optional": true
-        },
-        {
-          "name": "Name",
-          "description": "The name of this object.",
-          "jsontype": "String",
-          "actualtype": "String",
-          "optional": true
-        },
-        {
-          "name": "Operation",
-          "description": "The operation that was performed.",
-          "jsontype": "String",
-          "actualtype": "OperationTypes",
-          "isenum": true,
-          "optional": true
-        }
-      ]
-    },
-    {
-      "name": "Member",
-      "className": "Member",
-      "classNameSpace": "PlayFab.PlayStreamEvent.Models",
-      "assembly": "PlayFab.PlayStreamEvent.Models",
-      "properties": [
-        {
-          "name": "EntityId",
-          "description": "The identifier for the member entity.",
-          "jsontype": "String",
-          "actualtype": "String",
-          "optional": true
-        },
-        {
-          "name": "EntityType",
-          "description": "The type of member entity.",
-          "jsontype": "String",
-          "actualtype": "String",
-          "optional": true
-        }
-      ]
-    },
-    {
-      "name": "RolePropertyValues",
-      "className": "RolePropertyValues",
-      "classNameSpace": "PlayFab.PlayStreamEvent.Models",
-      "assembly": "PlayFab.PlayStreamEvent.Models",
-      "properties": [
-        {
-          "name": "RoleName",
-          "jsontype": "String",
-          "actualtype": "String",
-          "optional": true
-        }
-      ]
-    },
-    {
-      "name": "GroupPropertyValues",
-      "className": "GroupPropertyValues",
-      "classNameSpace": "PlayFab.PlayStreamEvent.Models",
-      "assembly": "PlayFab.PlayStreamEvent.Models",
-      "properties": [
-        {
-          "name": "AdminRoleId",
-          "jsontype": "String",
-          "actualtype": "String",
-          "optional": true
-        },
-        {
-          "name": "GroupName",
-          "jsontype": "String",
-          "actualtype": "String",
-          "optional": true
-        },
-        {
-          "name": "MemberRoleId",
-          "jsontype": "String",
-          "actualtype": "String",
-          "optional": true
-        }
-      ]
-    },
-    {
-      "name": "MultiplayerServerBuildDeletedEventPayload",
-      "className": "MultiplayerServerBuildDeletedEventPayload",
-      "classNameSpace": "PlayFab.PlayStreamEvent.Models",
-      "assembly": "PlayFab.PlayStreamEvent.Models",
-      "properties": [
-        {
-          "name": "BuildId",
-          "description": "The guid string ID of the multiplayer server build that was deleted.",
-          "jsontype": "String",
-          "actualtype": "String",
-          "optional": true
-        }
-      ]
-    },
-    {
-      "name": "EntityKey",
-      "className": "EntityKey",
-      "classNameSpace": "PlayFab.PlayStreamEvent.Models",
-      "assembly": "PlayFab.PlayStreamEvent.Models",
-      "description": "Combined entity type and ID structure which uniquely identifies a single entity.",
-      "properties": [
-        {
-          "name": "Id",
-          "description": "Unique ID of the entity.",
-          "jsontype": "String",
-          "actualtype": "String",
-          "optional": false
-        },
-        {
-          "name": "Type",
-          "description": "Entity type. See https://api.playfab.com/docs/tutorials/entities/entitytypes",
-          "jsontype": "String",
-          "actualtype": "String",
-          "optional": true
-        },
-        {
-          "name": "TypeString",
-          "description": "Alternate name for Type.",
-          "deprecation": {
-            "ProposedAfter": "6/1/2018",
-            "DeprecatedAfter": "7/1/2018",
-            "ObsoleteAfter": "8/1/2018",
-            "ReplacedBy": "Type"
-          },
-          "jsontype": "String",
-          "actualtype": "String",
-          "optional": true
-        }
-      ]
-    },
-    {
-      "name": "AzureRegion",
-      "className": "AzureRegion",
-      "classNameSpace": "PlayFab.PlayStreamEvent.Models",
-      "assembly": "PlayFab.PlayStreamEvent.Models",
-      "isenum": true,
-      "enumvalues": [
-        {
-          "name": "AustraliaEast"
-        },
-        {
-          "name": "AustraliaSoutheast"
-        },
-        {
-          "name": "BrazilSouth"
-        },
-        {
-          "name": "CentralUs"
-        },
-        {
-          "name": "EastAsia"
-        },
-        {
-          "name": "EastUs"
-        },
-        {
-          "name": "EastUs2"
-        },
-        {
-          "name": "JapanEast"
-        },
-        {
-          "name": "JapanWest"
-        },
-        {
-          "name": "NorthCentralUs"
-        },
-        {
-          "name": "NorthEurope"
-        },
-        {
-          "name": "SouthCentralUs"
-        },
-        {
-          "name": "SoutheastAsia"
-        },
-        {
-          "name": "WestEurope"
-        },
-        {
-          "name": "WestUs"
-        },
-        {
-          "name": "ChinaEast2"
-        },
-        {
-          "name": "ChinaNorth2"
-        }
-      ]
-    },
-    {
-      "name": "MultiplayerServerBuildRegionStatusChangedEventPayload",
-      "className": "MultiplayerServerBuildRegionStatusChangedEventPayload",
-      "classNameSpace": "PlayFab.PlayStreamEvent.Models",
-      "assembly": "PlayFab.PlayStreamEvent.Models",
-      "properties": [
-        {
-          "name": "BuildId",
-          "description": "The guid string ID of the build.",
-          "jsontype": "String",
-          "actualtype": "String",
-          "optional": true
-        },
-        {
-          "name": "MinutesInOldStatus",
-          "description": "The duration (minutes) in the old build status.",
-          "jsontype": "Number",
-          "actualtype": "double",
-          "optional": false
-        },
-        {
-          "name": "NewStatus",
-          "description": "The new build region status.",
-          "jsontype": "String",
-          "actualtype": "String",
-          "optional": true
-        },
-        {
-          "name": "OldStatus",
-          "description": "The old build region status.",
-          "jsontype": "String",
-          "actualtype": "String",
-          "optional": true
-        },
-        {
-          "name": "Region",
-          "description": "The build region.",
-          "jsontype": "String",
-          "actualtype": "AzureRegion",
-          "isenum": true,
-          "optional": true
-        }
-      ]
-    },
-    {
-      "name": "BuildRegion",
-      "className": "BuildRegion",
-      "classNameSpace": "PlayFab.PlayStreamEvent.Models",
-      "assembly": "PlayFab.PlayStreamEvent.Models",
-      "properties": [
-        {
-          "name": "MaxServers",
-          "description": "The maximum number of multiplayer servers for the region.",
-          "jsontype": "Number",
-          "actualtype": "int32",
-          "optional": false
-        },
-        {
-          "name": "Region",
-          "description": "The build region.",
-          "jsontype": "String",
-          "actualtype": "AzureRegion",
-          "isenum": true,
-          "optional": true
-        },
-        {
-          "name": "StandbyServers",
-          "description": "The number of standby multiplayer servers for the region.",
-          "jsontype": "Number",
-          "actualtype": "int32",
-          "optional": false
-        }
-      ]
-    },
-    {
-      "name": "MultiplayerServerBuildRegionUpdatedEventPayload",
-      "className": "MultiplayerServerBuildRegionUpdatedEventPayload",
-      "classNameSpace": "PlayFab.PlayStreamEvent.Models",
-      "assembly": "PlayFab.PlayStreamEvent.Models",
-      "properties": [
-        {
-          "name": "BuildId",
-          "description": "The guid string ID of the multiplayer server build that regions were updated on.",
-          "jsontype": "String",
-          "actualtype": "String",
-          "optional": true
-        },
-        {
-          "name": "BuildRegions",
-          "description": "The updated region configuration that should be applied to the specified build.",
-          "collection": "array",
-          "jsontype": "Object",
-          "actualtype": "BuildRegion",
-          "isclass": true,
-          "optional": true
-        }
-      ]
-    },
-    {
-      "name": "MultiplayerServerCertificateDeletedEventPayload",
-      "className": "MultiplayerServerCertificateDeletedEventPayload",
-      "classNameSpace": "PlayFab.PlayStreamEvent.Models",
-      "assembly": "PlayFab.PlayStreamEvent.Models",
-      "properties": [
-        {
-          "name": "CertificateName",
-          "description": "The name of the certificate that was deleted.",
-          "jsontype": "String",
-          "actualtype": "String",
-          "optional": true
-        }
-      ]
-    },
-    {
-      "name": "MultiplayerServerCertificateUploadedEventPayload",
-      "className": "MultiplayerServerCertificateUploadedEventPayload",
-      "classNameSpace": "PlayFab.PlayStreamEvent.Models",
-      "assembly": "PlayFab.PlayStreamEvent.Models",
-      "properties": [
-        {
-          "name": "CertificateName",
-          "description": "The name of the certificate that was uploaded.",
-          "jsontype": "String",
-          "actualtype": "String",
-          "optional": true
-        }
-      ]
-    },
-    {
-      "name": "MultiplayerServerCreateBuildInitiatedEventPayload",
-      "className": "MultiplayerServerCreateBuildInitiatedEventPayload",
-      "classNameSpace": "PlayFab.PlayStreamEvent.Models",
-      "assembly": "PlayFab.PlayStreamEvent.Models",
-      "properties": [
-        {
-          "name": "BuildId",
-          "description": "The guid string ID of the build",
-          "jsontype": "String",
-          "actualtype": "String",
-          "optional": true
-        },
-        {
-          "name": "BuildName",
-          "description": "The build name.",
-          "jsontype": "String",
-          "actualtype": "String",
-          "optional": true
-        },
-        {
-          "name": "CreationTime",
-          "description": "The time (UTC) that the build was created.",
-          "jsontype": "String",
-          "actualtype": "DateTime",
-          "optional": true
-        },
-        {
-          "name": "Metadata",
-          "description": "The developer defined metadata of the build.",
-          "collection": "map",
-          "jsontype": "String",
-          "actualtype": "String",
-          "optional": true
-        }
-      ]
-    },
-    {
-      "name": "MultiplayerServerGameAssetDeletedEventPayload",
-      "className": "MultiplayerServerGameAssetDeletedEventPayload",
-      "classNameSpace": "PlayFab.PlayStreamEvent.Models",
-      "assembly": "PlayFab.PlayStreamEvent.Models",
-      "properties": [
-        {
-          "name": "AssetFileName",
-          "description": "The filename of the asset that was deleted.",
-          "jsontype": "String",
-          "actualtype": "String",
-          "optional": true
-        }
-      ]
-    },
-    {
       "name": "GenericErrorCodes",
       "className": "GenericErrorCodes",
       "classNameSpace": "PlayFab.PlayStreamEvent.Models",
@@ -8479,25 +8233,76 @@
           "name": "EmailRecipientBlacklisted"
         },
         {
+          "name": "InvalidGameCenterAuthRequest"
+        },
+        {
+          "name": "GameCenterAuthenticationFailed"
+        },
+        {
+          "name": "CannotEnablePartiesForTitle"
+        },
+        {
+          "name": "PartyError"
+        },
+        {
+          "name": "PartyRequests"
+        },
+        {
+          "name": "PartyNoContent"
+        },
+        {
+          "name": "PartyBadRequest"
+        },
+        {
+          "name": "PartyUnauthorized"
+        },
+        {
+          "name": "PartyForbidden"
+        },
+        {
+          "name": "PartyNotFound"
+        },
+        {
+          "name": "PartyConflict"
+        },
+        {
+          "name": "PartyInternalServerError"
+        },
+        {
+          "name": "PartyUnavailable"
+        },
+        {
+          "name": "PartyTooManyRequests"
+        },
+        {
+          "name": "PushNotificationTemplateMissingName"
+        },
+        {
+          "name": "CannotEnableMultiplayerServersForTitle"
+        },
+        {
+          "name": "WriteAttemptedDuringExport"
+        },
+        {
           "name": "MatchmakingEntityInvalid"
         },
         {
           "name": "MatchmakingPlayerAttributesInvalid"
         },
         {
-          "name": "MatchmakingCreateRequestMissing"
+          "name": "MatchmakingCreateTicketRequestMissing"
         },
         {
-          "name": "MatchmakingCreateRequestCreatorMissing"
+          "name": "MatchmakingCreateTicketCreatorMissing"
         },
         {
-          "name": "MatchmakingCreateRequestCreatorIdMissing"
+          "name": "MatchmakingCreateTicketCreatorIdMissing"
         },
         {
-          "name": "MatchmakingCreateRequestUserListMissing"
+          "name": "MatchmakingCreateTicketMemberListMissing"
         },
         {
-          "name": "MatchmakingCreateRequestGiveUpAfterInvalid"
+          "name": "MatchmakingCreateTicketGiveUpAfterInvalid"
         },
         {
           "name": "MatchmakingTicketIdMissing"
@@ -8521,7 +8326,7 @@
           "name": "MatchmakingPlayerIdMissing"
         },
         {
-          "name": "MatchmakingJoinRequestUserMissing"
+          "name": "MatchmakingJoinTicketPlayerMissing"
         },
         {
           "name": "MatchmakingQueueConfigNotFound"
@@ -8539,19 +8344,19 @@
           "name": "MatchmakingCreateTicketClientIdentityInvalid"
         },
         {
-          "name": "MatchmakingGetTicketUserMismatch"
+          "name": "MatchmakingGetTicketPlayerMismatch"
         },
         {
           "name": "MatchmakingJoinTicketServerIdentityInvalid"
         },
         {
-          "name": "MatchmakingJoinTicketUserIdentityMismatch"
+          "name": "MatchmakingJoinTicketPlayerIdentityMismatch"
         },
         {
           "name": "MatchmakingCancelTicketServerIdentityInvalid"
         },
         {
-          "name": "MatchmakingCancelTicketUserIdentityMismatch"
+          "name": "MatchmakingCancelTicketPlayerIdentityMismatch"
         },
         {
           "name": "MatchmakingGetMatchIdentityMismatch"
@@ -8566,16 +8371,13 @@
           "name": "MatchmakingTicketAlreadyCompleted"
         },
         {
-          "name": "MatchmakingQueueNameInvalid"
+          "name": "MatchmakingClientTimeout"
         },
         {
           "name": "MatchmakingQueueConfigInvalid"
         },
         {
           "name": "MatchmakingMemberProfileInvalid"
-        },
-        {
-          "name": "WriteAttemptedDuringExport"
         },
         {
           "name": "NintendoSwitchDeviceIdNotLinked"
@@ -8587,10 +8389,49 @@
           "name": "MatchmakingGetStatisticsIdentityInvalid"
         },
         {
-          "name": "MatchmakingStatisticsIdMissing"
+          "name": "MatchmakingBucketOwnerNotFound"
         },
         {
-          "name": "CannotEnableMultiplayerServersForTitle"
+          "name": "MatchmakingCancelAllTicketsUnauthorized"
+        },
+        {
+          "name": "MatchmakingListTicketsUnauthorized"
+        },
+        {
+          "name": "MatchmakingPlayerAttributesTooLarge"
+        },
+        {
+          "name": "MatchmakingNumberOfPlayersInTicketTooLarge"
+        },
+        {
+          "name": "MatchmakingMatchTotalAttributeIsNegative"
+        },
+        {
+          "name": "MatchmakingAttributeTypeInvalid"
+        },
+        {
+          "name": "MatchmakingMatchTotalAttributeTooLarge"
+        },
+        {
+          "name": "MatchmakingMatchTotalAttributeSumTooLarge"
+        },
+        {
+          "name": "MatchmakingTicketUnmatchable"
+        },
+        {
+          "name": "MatchmakingCommonRegionMissing"
+        },
+        {
+          "name": "MatchmakingLatencyMeasurementMissing"
+        },
+        {
+          "name": "MatchmakingStatisticsNotFound"
+        },
+        {
+          "name": "MatchmakingPlayerHasNotJoinedTicket"
+        },
+        {
+          "name": "MatchmakingRateLimitExceeded"
         },
         {
           "name": "TitleConfigNotFound"
@@ -8600,6 +8441,837 @@
         },
         {
           "name": "TitleConfigSerializationError"
+        },
+        {
+          "name": "CatalogEntityInvalid"
+        },
+        {
+          "name": "CatalogTitleIdMissing"
+        },
+        {
+          "name": "CatalogPlayerIdMissing"
+        },
+        {
+          "name": "CatalogClientIdentityInvalid"
+        },
+        {
+          "name": "CatalogOneOrMoreFilesInvalid"
+        },
+        {
+          "name": "CatalogItemMetadataInvalid"
+        },
+        {
+          "name": "CatalogItemIdInvalid"
+        },
+        {
+          "name": "CatalogSearchParameterInvalid"
+        },
+        {
+          "name": "CatalogFeatureDisabled"
+        },
+        {
+          "name": "CatalogConfigMissing"
+        },
+        {
+          "name": "CatalogConfigTooManyContentTypes"
+        },
+        {
+          "name": "CatalogConfigContentTypeTooLong"
+        },
+        {
+          "name": "CatalogConfigTooManyTags"
+        },
+        {
+          "name": "CatalogConfigTagTooLong"
+        }
+      ]
+    },
+    {
+      "name": "EntityCatalogDraftItemCreatedEventPayload",
+      "className": "EntityCatalogDraftItemCreatedEventPayload",
+      "classNameSpace": "PlayFab.PlayStreamEvent.Models",
+      "assembly": "PlayFab.PlayStreamEvent.Models",
+      "properties": [
+        {
+          "name": "ErrorCode",
+          "description": "The error when a catalog item create request fails. If there was no failure, will be null.",
+          "jsontype": "String",
+          "actualtype": "GenericErrorCodes",
+          "isenum": true,
+          "optional": true
+        },
+        {
+          "name": "ItemId",
+          "description": "The string ID of the item that was created. Will be empty if the create call failed.",
+          "jsontype": "String",
+          "actualtype": "String",
+          "optional": true
+        },
+        {
+          "name": "Message",
+          "description": "The human-readable error message when a catalog item create request fails. If there was no failure, will be empty.",
+          "jsontype": "String",
+          "actualtype": "String",
+          "optional": true
+        }
+      ]
+    },
+    {
+      "name": "EntityKey",
+      "className": "EntityKey",
+      "classNameSpace": "PlayFab.PlayStreamEvent.Models",
+      "assembly": "PlayFab.PlayStreamEvent.Models",
+      "description": "Combined entity type and ID structure which uniquely identifies a single entity.",
+      "properties": [
+        {
+          "name": "Id",
+          "description": "Unique ID of the entity.",
+          "jsontype": "String",
+          "actualtype": "String",
+          "optional": false
+        },
+        {
+          "name": "Type",
+          "description": "Entity type. See https://api.playfab.com/docs/tutorials/entities/entitytypes",
+          "jsontype": "String",
+          "actualtype": "String",
+          "optional": true
+        },
+        {
+          "name": "TypeString",
+          "description": "Alternate name for Type.",
+          "deprecation": {
+            "ProposedAfter": "6/1/2018",
+            "DeprecatedAfter": "7/1/2018",
+            "ObsoleteAfter": "8/1/2018",
+            "ReplacedBy": "Type"
+          },
+          "jsontype": "String",
+          "actualtype": "String",
+          "optional": true
+        }
+      ]
+    },
+    {
+      "name": "EntityLineage",
+      "className": "EntityLineage",
+      "classNameSpace": "PlayFab.PlayStreamEvent.Models",
+      "assembly": "PlayFab.PlayStreamEvent.Models",
+      "properties": [
+        {
+          "name": "CharacterId",
+          "description": "The Character Id of the associated entity.",
+          "jsontype": "String",
+          "actualtype": "String",
+          "optional": true
+        },
+        {
+          "name": "GroupId",
+          "description": "The Group Id of the associated entity.",
+          "jsontype": "String",
+          "actualtype": "String",
+          "optional": true
+        },
+        {
+          "name": "MasterPlayerAccountId",
+          "description": "The Master Player Account Id of the associated entity.",
+          "jsontype": "String",
+          "actualtype": "String",
+          "optional": true
+        },
+        {
+          "name": "NamespaceId",
+          "description": "The Namespace Id of the associated entity.",
+          "jsontype": "String",
+          "actualtype": "String",
+          "optional": true
+        },
+        {
+          "name": "TitleId",
+          "description": "The Title Id of the associated entity.",
+          "jsontype": "String",
+          "actualtype": "String",
+          "optional": true
+        },
+        {
+          "name": "TitlePlayerAccountId",
+          "description": "The Title Player Account Id of the associated entity.",
+          "jsontype": "String",
+          "actualtype": "String",
+          "optional": true
+        }
+      ]
+    },
+    {
+      "name": "EntityCatalogDraftItemDeletedEventPayload",
+      "className": "EntityCatalogDraftItemDeletedEventPayload",
+      "classNameSpace": "PlayFab.PlayStreamEvent.Models",
+      "assembly": "PlayFab.PlayStreamEvent.Models",
+      "properties": [
+        {
+          "name": "ErrorCode",
+          "description": "The error when a catalog item deleted request fails. If there was no failure, will be null.",
+          "jsontype": "String",
+          "actualtype": "GenericErrorCodes",
+          "isenum": true,
+          "optional": true
+        },
+        {
+          "name": "ItemId",
+          "description": "The ID of the item that was deleted.",
+          "jsontype": "String",
+          "actualtype": "String",
+          "optional": true
+        },
+        {
+          "name": "Message",
+          "description": "The human-readable error message when a catalog item deleted request fails. If there was no failure, will be empty.",
+          "jsontype": "String",
+          "actualtype": "String",
+          "optional": true
+        }
+      ]
+    },
+    {
+      "name": "EntityCatalogDraftItemPublishRequestedEventPayload",
+      "className": "EntityCatalogDraftItemPublishRequestedEventPayload",
+      "classNameSpace": "PlayFab.PlayStreamEvent.Models",
+      "assembly": "PlayFab.PlayStreamEvent.Models",
+      "properties": [
+        {
+          "name": "ErrorCode",
+          "description": "The error when a catalog item publish request fails. If there was no failure, will be null.",
+          "jsontype": "String",
+          "actualtype": "GenericErrorCodes",
+          "isenum": true,
+          "optional": true
+        },
+        {
+          "name": "ItemId",
+          "description": "The string ID of the draft item that was requested to be published. Will be empty if the request call failed.",
+          "jsontype": "String",
+          "actualtype": "String",
+          "optional": true
+        },
+        {
+          "name": "Message",
+          "description": "The human-readable error message when a catalog item publish request fails. If there was no failure, will be empty.",
+          "jsontype": "String",
+          "actualtype": "String",
+          "optional": true
+        }
+      ]
+    },
+    {
+      "name": "EntityCatalogDraftItemUpdatedEventPayload",
+      "className": "EntityCatalogDraftItemUpdatedEventPayload",
+      "classNameSpace": "PlayFab.PlayStreamEvent.Models",
+      "assembly": "PlayFab.PlayStreamEvent.Models",
+      "properties": [
+        {
+          "name": "ErrorCode",
+          "description": "The error when a catalog item update request fails. If there was no failure, will be null.",
+          "jsontype": "String",
+          "actualtype": "GenericErrorCodes",
+          "isenum": true,
+          "optional": true
+        },
+        {
+          "name": "ItemId",
+          "description": "The string ID of the item that was updated. Will be empty if the update call failed.",
+          "jsontype": "String",
+          "actualtype": "String",
+          "optional": true
+        },
+        {
+          "name": "Message",
+          "description": "The human-readable error message when a catalog item update request fails. If there was no failure, will be empty.",
+          "jsontype": "String",
+          "actualtype": "String",
+          "optional": true
+        }
+      ]
+    },
+    {
+      "name": "LogStatement",
+      "className": "LogStatement",
+      "classNameSpace": "PlayFab.PlayStreamEvent.Models",
+      "assembly": "PlayFab.PlayStreamEvent.Models",
+      "properties": [
+        {
+          "name": "Data",
+          "description": "Optional object accompanying the message as contextual information",
+          "jsontype": "Object",
+          "actualtype": "object",
+          "optional": true
+        },
+        {
+          "name": "Level",
+          "description": "'Debug', 'Info', or 'Error'",
+          "jsontype": "String",
+          "actualtype": "String",
+          "optional": true
+        },
+        {
+          "name": "Message",
+          "jsontype": "String",
+          "actualtype": "String",
+          "optional": true
+        }
+      ]
+    },
+    {
+      "name": "ScriptExecutionError",
+      "className": "ScriptExecutionError",
+      "classNameSpace": "PlayFab.PlayStreamEvent.Models",
+      "assembly": "PlayFab.PlayStreamEvent.Models",
+      "properties": [
+        {
+          "name": "Error",
+          "description": "Error code, such as CloudScriptNotFound, JavascriptException, CloudScriptFunctionArgumentSizeExceeded, CloudScriptAPIRequestCountExceeded, CloudScriptAPIRequestError, or CloudScriptHTTPRequestError",
+          "jsontype": "String",
+          "actualtype": "String",
+          "optional": true
+        },
+        {
+          "name": "Message",
+          "description": "Details about the error",
+          "jsontype": "String",
+          "actualtype": "String",
+          "optional": true
+        },
+        {
+          "name": "StackTrace",
+          "description": "Point during the execution of the script at which the error occurred, if any",
+          "jsontype": "String",
+          "actualtype": "String",
+          "optional": true
+        }
+      ]
+    },
+    {
+      "name": "ExecuteCloudScriptResult",
+      "className": "ExecuteCloudScriptResult",
+      "classNameSpace": "PlayFab.PlayStreamEvent.Models",
+      "assembly": "PlayFab.PlayStreamEvent.Models",
+      "properties": [
+        {
+          "name": "APIRequestsIssued",
+          "description": "Number of PlayFab API requests issued by the CloudScript function",
+          "jsontype": "Number",
+          "actualtype": "int32",
+          "optional": false
+        },
+        {
+          "name": "Error",
+          "description": "Information about the error, if any, that occurred during execution",
+          "jsontype": "Object",
+          "actualtype": "ScriptExecutionError",
+          "isclass": true,
+          "optional": true
+        },
+        {
+          "name": "ExecutionTimeSeconds",
+          "jsontype": "Number",
+          "actualtype": "double",
+          "optional": false
+        },
+        {
+          "name": "FunctionName",
+          "description": "The name of the function that executed",
+          "jsontype": "String",
+          "actualtype": "String",
+          "optional": true
+        },
+        {
+          "name": "FunctionResult",
+          "description": "The object returned from the CloudScript function, if any",
+          "jsontype": "Object",
+          "actualtype": "object",
+          "optional": true
+        },
+        {
+          "name": "FunctionResultTooLarge",
+          "description": "Flag indicating if the FunctionResult was too large and was subsequently dropped from this event. This only occurs if the total event size is larger than 350KB.",
+          "jsontype": "Boolean",
+          "actualtype": "Boolean",
+          "optional": true
+        },
+        {
+          "name": "HttpRequestsIssued",
+          "description": "Number of external HTTP requests issued by the CloudScript function",
+          "jsontype": "Number",
+          "actualtype": "int32",
+          "optional": false
+        },
+        {
+          "name": "Logs",
+          "description": "Entries logged during the function execution. These include both entries logged in the function code using log.info() and log.error() and error entries for API and HTTP request failures.",
+          "collection": "array",
+          "jsontype": "Object",
+          "actualtype": "LogStatement",
+          "isclass": true,
+          "optional": true
+        },
+        {
+          "name": "LogsTooLarge",
+          "description": "Flag indicating if the logs were too large and were subsequently dropped from this event. This only occurs if the total event size is larger than 350KB after the FunctionResult was removed.",
+          "jsontype": "Boolean",
+          "actualtype": "Boolean",
+          "optional": true
+        },
+        {
+          "name": "MemoryConsumedBytes",
+          "jsontype": "Number",
+          "actualtype": "uint32",
+          "optional": false
+        },
+        {
+          "name": "ProcessorTimeSeconds",
+          "description": "Processor time consumed while executing the function. This does not include time spent waiting on API calls or HTTP requests.",
+          "jsontype": "Number",
+          "actualtype": "double",
+          "optional": false
+        },
+        {
+          "name": "Revision",
+          "description": "The revision of the CloudScript that executed",
+          "jsontype": "Number",
+          "actualtype": "int32",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "OperationTypes",
+      "className": "OperationTypes",
+      "classNameSpace": "PlayFab.PlayStreamEvent.Models",
+      "assembly": "PlayFab.PlayStreamEvent.Models",
+      "isenum": true,
+      "enumvalues": [
+        {
+          "name": "Created"
+        },
+        {
+          "name": "Updated"
+        },
+        {
+          "name": "Deleted"
+        },
+        {
+          "name": "None"
+        }
+      ]
+    },
+    {
+      "name": "FileSet",
+      "className": "FileSet",
+      "classNameSpace": "PlayFab.PlayStreamEvent.Models",
+      "assembly": "PlayFab.PlayStreamEvent.Models",
+      "properties": [
+        {
+          "name": "ByteCount",
+          "description": "The storage size according to the underlying provider.",
+          "jsontype": "Number",
+          "actualtype": "int32",
+          "optional": false
+        },
+        {
+          "name": "Checksum",
+          "description": "The checksum according to the underlying provider.",
+          "jsontype": "String",
+          "actualtype": "String",
+          "optional": true
+        },
+        {
+          "name": "FileName",
+          "description": "File that was updated.",
+          "jsontype": "String",
+          "actualtype": "String",
+          "optional": true
+        },
+        {
+          "name": "Operation",
+          "description": "The operation that was performed.",
+          "jsontype": "String",
+          "actualtype": "OperationTypes",
+          "isenum": true,
+          "optional": true
+        },
+        {
+          "name": "PreviousByteCount",
+          "description": "The storage size of the old file, if there was one.",
+          "jsontype": "Number",
+          "actualtype": "int32",
+          "optional": true
+        },
+        {
+          "name": "PreviousChecksum",
+          "description": "The storage size of the old file, if there was one.",
+          "jsontype": "String",
+          "actualtype": "String",
+          "optional": true
+        },
+        {
+          "name": "PreviousStoragePath",
+          "description": "The old file's unique storage path that was deleted by this operation, if there was one.",
+          "jsontype": "String",
+          "actualtype": "String",
+          "optional": true
+        },
+        {
+          "name": "StoragePath",
+          "description": "The unique storage path for this set operation.",
+          "jsontype": "String",
+          "actualtype": "String",
+          "optional": true
+        }
+      ]
+    },
+    {
+      "name": "ObjectSet",
+      "className": "ObjectSet",
+      "classNameSpace": "PlayFab.PlayStreamEvent.Models",
+      "assembly": "PlayFab.PlayStreamEvent.Models",
+      "properties": [
+        {
+          "name": "DataObject",
+          "description": "The JSON Object that was last set on the profile.",
+          "jsontype": "Object",
+          "actualtype": "object",
+          "optional": true
+        },
+        {
+          "name": "Name",
+          "description": "The name of this object.",
+          "jsontype": "String",
+          "actualtype": "String",
+          "optional": true
+        },
+        {
+          "name": "Operation",
+          "description": "The operation that was performed.",
+          "jsontype": "String",
+          "actualtype": "OperationTypes",
+          "isenum": true,
+          "optional": true
+        }
+      ]
+    },
+    {
+      "name": "Member",
+      "className": "Member",
+      "classNameSpace": "PlayFab.PlayStreamEvent.Models",
+      "assembly": "PlayFab.PlayStreamEvent.Models",
+      "properties": [
+        {
+          "name": "EntityId",
+          "description": "The identifier for the member entity.",
+          "jsontype": "String",
+          "actualtype": "String",
+          "optional": true
+        },
+        {
+          "name": "EntityType",
+          "description": "The type of member entity.",
+          "jsontype": "String",
+          "actualtype": "String",
+          "optional": true
+        }
+      ]
+    },
+    {
+      "name": "RolePropertyValues",
+      "className": "RolePropertyValues",
+      "classNameSpace": "PlayFab.PlayStreamEvent.Models",
+      "assembly": "PlayFab.PlayStreamEvent.Models",
+      "properties": [
+        {
+          "name": "RoleName",
+          "jsontype": "String",
+          "actualtype": "String",
+          "optional": true
+        }
+      ]
+    },
+    {
+      "name": "GroupPropertyValues",
+      "className": "GroupPropertyValues",
+      "classNameSpace": "PlayFab.PlayStreamEvent.Models",
+      "assembly": "PlayFab.PlayStreamEvent.Models",
+      "properties": [
+        {
+          "name": "AdminRoleId",
+          "jsontype": "String",
+          "actualtype": "String",
+          "optional": true
+        },
+        {
+          "name": "GroupName",
+          "jsontype": "String",
+          "actualtype": "String",
+          "optional": true
+        },
+        {
+          "name": "MemberRoleId",
+          "jsontype": "String",
+          "actualtype": "String",
+          "optional": true
+        }
+      ]
+    },
+    {
+      "name": "MultiplayerServerBuildDeletedEventPayload",
+      "className": "MultiplayerServerBuildDeletedEventPayload",
+      "classNameSpace": "PlayFab.PlayStreamEvent.Models",
+      "assembly": "PlayFab.PlayStreamEvent.Models",
+      "properties": [
+        {
+          "name": "BuildId",
+          "description": "The guid string ID of the multiplayer server build that was deleted.",
+          "jsontype": "String",
+          "actualtype": "String",
+          "optional": true
+        }
+      ]
+    },
+    {
+      "name": "AzureRegion",
+      "className": "AzureRegion",
+      "classNameSpace": "PlayFab.PlayStreamEvent.Models",
+      "assembly": "PlayFab.PlayStreamEvent.Models",
+      "isenum": true,
+      "enumvalues": [
+        {
+          "name": "AustraliaEast"
+        },
+        {
+          "name": "AustraliaSoutheast"
+        },
+        {
+          "name": "BrazilSouth"
+        },
+        {
+          "name": "CentralUs"
+        },
+        {
+          "name": "EastAsia"
+        },
+        {
+          "name": "EastUs"
+        },
+        {
+          "name": "EastUs2"
+        },
+        {
+          "name": "JapanEast"
+        },
+        {
+          "name": "JapanWest"
+        },
+        {
+          "name": "NorthCentralUs"
+        },
+        {
+          "name": "NorthEurope"
+        },
+        {
+          "name": "SouthCentralUs"
+        },
+        {
+          "name": "SoutheastAsia"
+        },
+        {
+          "name": "WestEurope"
+        },
+        {
+          "name": "WestUs"
+        },
+        {
+          "name": "ChinaEast2"
+        },
+        {
+          "name": "ChinaNorth2"
+        }
+      ]
+    },
+    {
+      "name": "MultiplayerServerBuildRegionStatusChangedEventPayload",
+      "className": "MultiplayerServerBuildRegionStatusChangedEventPayload",
+      "classNameSpace": "PlayFab.PlayStreamEvent.Models",
+      "assembly": "PlayFab.PlayStreamEvent.Models",
+      "properties": [
+        {
+          "name": "BuildId",
+          "description": "The guid string ID of the build.",
+          "jsontype": "String",
+          "actualtype": "String",
+          "optional": true
+        },
+        {
+          "name": "MinutesInOldStatus",
+          "description": "The duration (minutes) in the old build status.",
+          "jsontype": "Number",
+          "actualtype": "double",
+          "optional": false
+        },
+        {
+          "name": "NewStatus",
+          "description": "The new build region status.",
+          "jsontype": "String",
+          "actualtype": "String",
+          "optional": true
+        },
+        {
+          "name": "OldStatus",
+          "description": "The old build region status.",
+          "jsontype": "String",
+          "actualtype": "String",
+          "optional": true
+        },
+        {
+          "name": "Region",
+          "description": "The build region.",
+          "jsontype": "String",
+          "actualtype": "AzureRegion",
+          "isenum": true,
+          "optional": true
+        }
+      ]
+    },
+    {
+      "name": "BuildRegion",
+      "className": "BuildRegion",
+      "classNameSpace": "PlayFab.PlayStreamEvent.Models",
+      "assembly": "PlayFab.PlayStreamEvent.Models",
+      "properties": [
+        {
+          "name": "MaxServers",
+          "description": "The maximum number of multiplayer servers for the region.",
+          "jsontype": "Number",
+          "actualtype": "int32",
+          "optional": false
+        },
+        {
+          "name": "Region",
+          "description": "The build region.",
+          "jsontype": "String",
+          "actualtype": "AzureRegion",
+          "isenum": true,
+          "optional": true
+        },
+        {
+          "name": "StandbyServers",
+          "description": "The number of standby multiplayer servers for the region.",
+          "jsontype": "Number",
+          "actualtype": "int32",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "MultiplayerServerBuildRegionUpdatedEventPayload",
+      "className": "MultiplayerServerBuildRegionUpdatedEventPayload",
+      "classNameSpace": "PlayFab.PlayStreamEvent.Models",
+      "assembly": "PlayFab.PlayStreamEvent.Models",
+      "properties": [
+        {
+          "name": "BuildId",
+          "description": "The guid string ID of the multiplayer server build that regions were updated on.",
+          "jsontype": "String",
+          "actualtype": "String",
+          "optional": true
+        },
+        {
+          "name": "BuildRegions",
+          "description": "The updated region configuration that should be applied to the specified build.",
+          "collection": "array",
+          "jsontype": "Object",
+          "actualtype": "BuildRegion",
+          "isclass": true,
+          "optional": true
+        }
+      ]
+    },
+    {
+      "name": "MultiplayerServerCertificateDeletedEventPayload",
+      "className": "MultiplayerServerCertificateDeletedEventPayload",
+      "classNameSpace": "PlayFab.PlayStreamEvent.Models",
+      "assembly": "PlayFab.PlayStreamEvent.Models",
+      "properties": [
+        {
+          "name": "CertificateName",
+          "description": "The name of the certificate that was deleted.",
+          "jsontype": "String",
+          "actualtype": "String",
+          "optional": true
+        }
+      ]
+    },
+    {
+      "name": "MultiplayerServerCertificateUploadedEventPayload",
+      "className": "MultiplayerServerCertificateUploadedEventPayload",
+      "classNameSpace": "PlayFab.PlayStreamEvent.Models",
+      "assembly": "PlayFab.PlayStreamEvent.Models",
+      "properties": [
+        {
+          "name": "CertificateName",
+          "description": "The name of the certificate that was uploaded.",
+          "jsontype": "String",
+          "actualtype": "String",
+          "optional": true
+        }
+      ]
+    },
+    {
+      "name": "MultiplayerServerCreateBuildInitiatedEventPayload",
+      "className": "MultiplayerServerCreateBuildInitiatedEventPayload",
+      "classNameSpace": "PlayFab.PlayStreamEvent.Models",
+      "assembly": "PlayFab.PlayStreamEvent.Models",
+      "properties": [
+        {
+          "name": "BuildId",
+          "description": "The guid string ID of the build",
+          "jsontype": "String",
+          "actualtype": "String",
+          "optional": true
+        },
+        {
+          "name": "BuildName",
+          "description": "The build name.",
+          "jsontype": "String",
+          "actualtype": "String",
+          "optional": true
+        },
+        {
+          "name": "CreationTime",
+          "description": "The time (UTC) that the build was created.",
+          "jsontype": "String",
+          "actualtype": "DateTime",
+          "optional": true
+        },
+        {
+          "name": "Metadata",
+          "description": "The developer defined metadata of the build.",
+          "collection": "map",
+          "jsontype": "String",
+          "actualtype": "String",
+          "optional": true
+        }
+      ]
+    },
+    {
+      "name": "MultiplayerServerGameAssetDeletedEventPayload",
+      "className": "MultiplayerServerGameAssetDeletedEventPayload",
+      "classNameSpace": "PlayFab.PlayStreamEvent.Models",
+      "assembly": "PlayFab.PlayStreamEvent.Models",
+      "properties": [
+        {
+          "name": "AssetFileName",
+          "description": "The filename of the asset that was deleted.",
+          "jsontype": "String",
+          "actualtype": "String",
+          "optional": true
         }
       ]
     },
@@ -8927,6 +9599,148 @@
         {
           "name": "VmId",
           "description": "The ID of the unhealthy virtual machine.",
+          "jsontype": "String",
+          "actualtype": "String",
+          "optional": true
+        }
+      ]
+    },
+    {
+      "name": "EntityUserGeneratedContentDraftItemCreatedEventPayload",
+      "className": "EntityUserGeneratedContentDraftItemCreatedEventPayload",
+      "classNameSpace": "PlayFab.PlayStreamEvent.Models",
+      "assembly": "PlayFab.PlayStreamEvent.Models",
+      "properties": [
+        {
+          "name": "ErrorCode",
+          "description": "The error when a User Generated Content item create request fails. If there was no failure, will be null.",
+          "jsontype": "String",
+          "actualtype": "GenericErrorCodes",
+          "isenum": true,
+          "optional": true
+        },
+        {
+          "name": "ItemId",
+          "description": "The string ID of the item that was created. Will be empty if the create call failed.",
+          "jsontype": "String",
+          "actualtype": "String",
+          "optional": true
+        },
+        {
+          "name": "Message",
+          "description": "The human-readable error message when a User Generated Content item create request fails. If there was no failure, will be empty.",
+          "jsontype": "String",
+          "actualtype": "String",
+          "optional": true
+        }
+      ]
+    },
+    {
+      "name": "EntityUserGeneratedContentDraftItemDeletedEventPayload",
+      "className": "EntityUserGeneratedContentDraftItemDeletedEventPayload",
+      "classNameSpace": "PlayFab.PlayStreamEvent.Models",
+      "assembly": "PlayFab.PlayStreamEvent.Models",
+      "properties": [
+        {
+          "name": "ErrorCode",
+          "description": "The error when a User Generated Content item deleted request fails. If there was no failure, will be null.",
+          "jsontype": "String",
+          "actualtype": "GenericErrorCodes",
+          "isenum": true,
+          "optional": true
+        },
+        {
+          "name": "ItemId",
+          "description": "The ID of the item that was deleted.",
+          "jsontype": "String",
+          "actualtype": "String",
+          "optional": true
+        },
+        {
+          "name": "Message",
+          "description": "The human-readable error message when a User Generated Content item deleted request fails. If there was no failure, will be empty.",
+          "jsontype": "String",
+          "actualtype": "String",
+          "optional": true
+        }
+      ]
+    },
+    {
+      "name": "EntityUserGeneratedContentDraftItemPublishRequestedEventPayload",
+      "className": "EntityUserGeneratedContentDraftItemPublishRequestedEventPayload",
+      "classNameSpace": "PlayFab.PlayStreamEvent.Models",
+      "assembly": "PlayFab.PlayStreamEvent.Models",
+      "properties": [
+        {
+          "name": "ErrorCode",
+          "description": "The error when a User Generated Content item publish request fails. If there was no failure, will be null.",
+          "jsontype": "String",
+          "actualtype": "GenericErrorCodes",
+          "isenum": true,
+          "optional": true
+        },
+        {
+          "name": "ItemId",
+          "description": "The string ID of the draft item that was requested to be published. Will be empty if the request call failed.",
+          "jsontype": "String",
+          "actualtype": "String",
+          "optional": true
+        },
+        {
+          "name": "Message",
+          "description": "The human-readable error message when a User Generated Content item publish request fails. If there was no failure, will be empty.",
+          "jsontype": "String",
+          "actualtype": "String",
+          "optional": true
+        }
+      ]
+    },
+    {
+      "name": "EntityUserGeneratedContentDraftItemUpdatedEventPayload",
+      "className": "EntityUserGeneratedContentDraftItemUpdatedEventPayload",
+      "classNameSpace": "PlayFab.PlayStreamEvent.Models",
+      "assembly": "PlayFab.PlayStreamEvent.Models",
+      "properties": [
+        {
+          "name": "ErrorCode",
+          "description": "The error when a User Generated Content item update request fails. If there was no failure, will be null.",
+          "jsontype": "String",
+          "actualtype": "GenericErrorCodes",
+          "isenum": true,
+          "optional": true
+        },
+        {
+          "name": "ItemId",
+          "description": "The string ID of the item that was updated. Will be empty if the update call failed.",
+          "jsontype": "String",
+          "actualtype": "String",
+          "optional": true
+        },
+        {
+          "name": "Message",
+          "description": "The human-readable error message when a User Generated Content item update request fails. If there was no failure, will be empty.",
+          "jsontype": "String",
+          "actualtype": "String",
+          "optional": true
+        }
+      ]
+    },
+    {
+      "name": "EntityUserGeneratedContentItemReportedEventPayload",
+      "className": "EntityUserGeneratedContentItemReportedEventPayload",
+      "classNameSpace": "PlayFab.PlayStreamEvent.Models",
+      "assembly": "PlayFab.PlayStreamEvent.Models",
+      "properties": [
+        {
+          "name": "ItemId",
+          "description": "The string ID of the item that was reported.",
+          "jsontype": "String",
+          "actualtype": "String",
+          "optional": true
+        },
+        {
+          "name": "Reason",
+          "description": "The reason for which this item was reported.",
           "jsontype": "String",
           "actualtype": "String",
           "optional": true

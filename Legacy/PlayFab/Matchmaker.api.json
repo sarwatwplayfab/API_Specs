@@ -11,7 +11,7 @@
       "className": "AuthUserRequest",
       "classNameSpace": "PlayFab.Matchmaker.Models",
       "assembly": "PlayFab.Matchmaker.Models",
-      "description": "This API allows the external match-making service to confirm that the user has a valid Session Ticket for the title, in order\r\nto securely enable match-making. The client passes the user's Session Ticket to the external match-making service, which then passes the Session Ticket in as the\r\nAuthorizationTicket in this call.",
+      "description": "This API allows the external match-making service to confirm that the user has a valid Session Ticket for the title, in order\nto securely enable match-making. The client passes the user's Session Ticket to the external match-making service, which then passes the Session Ticket in as the\nAuthorizationTicket in this call.",
       "isRequest": true,
       "properties": [
         {

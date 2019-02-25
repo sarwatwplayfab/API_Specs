@@ -166,7 +166,7 @@
       "AnyInclusiveFlags": [
         "Beta"
       ],
-      "description": "Only community items that have been published with the Publish Item API will be\r\n                returned by Search even for the creator. The creator should use the List Items API to\r\n                view all of their own items.",
+      "description": "Only community items that have been published with the Publish Item API will be\n                returned by Search even for the creator. The creator should use the List Items API to\n                view all of their own items.",
       "isRequest": true,
       "properties": [
         {
@@ -366,7 +366,7 @@
       "AnyInclusiveFlags": [
         "Beta"
       ],
-      "description": "Upload URLs point to Azure Blobs; clients must follow the Microsoft Azure Storage Blob Service REST\r\n                API pattern for uploading content. The response contains upload URLs and IDs for each file. The IDs and URLs\r\n                returned must be added to the item metadata and commited using the CreateDraftItem or UpdateDraftItem Item APIs.",
+      "description": "Upload URLs point to Azure Blobs; clients must follow the Microsoft Azure Storage Blob Service REST\n                API pattern for uploading content. The response contains upload URLs and IDs for each file. The IDs and URLs\n                returned must be added to the item metadata and commited using the CreateDraftItem or UpdateDraftItem Item APIs.",
       "isRequest": true,
       "properties": [
         {
@@ -742,7 +742,7 @@
       "AnyInclusiveFlags": [
         "Beta"
       ],
-      "description": "The call kicks off a workflow to publish the item to the public catalog.\r\n                The Publish Status API should be used to monitor the publish job.",
+      "description": "The call kicks off a workflow to publish the item to the public catalog.\n                The Publish Status API should be used to monitor the publish job.",
       "isRequest": true,
       "properties": [
         {
