@@ -1,7 +1,7 @@
 {
   "swagger": "2.0",
   "info": {
-    "version": "190225",
+    "version": "190226",
     "title": "PlayFab Economy API",
     "description": "API methods for managing User Generated Content.",
     "termsOfService": "https://playfab.com/terms/",

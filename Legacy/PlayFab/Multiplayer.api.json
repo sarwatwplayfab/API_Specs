@@ -3933,6 +3933,7 @@
         "MatchmakingPlayerIdentityMismatch",
         "MatchmakingPlayerIdMissing",
         "MatchmakingQueueNameMissing",
+        "MatchmakingRateLimitExceeded",
         "MatchmakingTicketIdMissing",
         "MatchmakingTitleIdMissing"
       ]
@@ -4294,6 +4295,7 @@
         "MatchmakingMatchIdMissing",
         "MatchmakingMatchNotFound",
         "MatchmakingQueueNameMissing",
+        "MatchmakingRateLimitExceeded",
         "MatchmakingTitleIdMissing"
       ]
     },
@@ -4339,6 +4341,7 @@
         "MatchmakingGetMatchIdentityMismatch",
         "MatchmakingGetTicketPlayerMismatch",
         "MatchmakingQueueNameMissing",
+        "MatchmakingRateLimitExceeded",
         "MatchmakingTicketIdIdMissing",
         "MatchmakingTicketIdMissing",
         "MatchmakingTicketNotFound",
@@ -4423,6 +4426,7 @@
         "MatchmakingGetStatisticsIdentityInvalid",
         "MatchmakingQueueConfigNotFound",
         "MatchmakingQueueNameMissing",
+        "MatchmakingRateLimitExceeded",
         "MatchmakingTitleIdMissing",
         "NotAuthorized"
       ]
@@ -4506,6 +4510,7 @@
         "MatchmakingPlayerIdentityMismatch",
         "MatchmakingPlayerIdMissing",
         "MatchmakingQueueNameMissing",
+        "MatchmakingRateLimitExceeded",
         "MatchmakingTicketAlreadyCompleted",
         "MatchmakingTicketIdIdMissing",
         "MatchmakingTicketIdMissing",
@@ -4721,6 +4726,7 @@
         "MatchmakingListTicketsUnauthorized",
         "MatchmakingPlayerIdMissing",
         "MatchmakingQueueNameMissing",
+        "MatchmakingRateLimitExceeded",
         "MatchmakingTitleIdMissing"
       ]
     },
